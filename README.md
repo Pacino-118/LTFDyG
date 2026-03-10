@@ -1,16 +1,12 @@
-# LTFDyG
-**LTFDyG: A Learnable Temporal Function-based Dynamic Graph Neural Network with Dual-Channel Encoding****LTFDyG：基于可学习时态函数的双通道编码动态图神经网络LTFDyG：一种双通道编码的可学习时态函数动态图神经网络**
-
+**LTFDyG: A Learnable Temporal Function-based Dynamic Graph Neural Network with Dual-Channel Encoding**
 ---
 
 
-## Introduction   介绍
+## Introduction   
 
 Dynamic graph neural networks (DGNNs) have become essential for modeling evolving relational systems such as financial transaction networks and communication networks. Despite their success, most existing approaches rely on fixed-form time encoding functions, which limits their ability to capture complex temporal patterns. 
 
-To overcome this limitation, we propose **LTFDyG**, a dynamic graph neural network that leverages a **learnable temporal function** and a **dual-channel encoding architecture**. The learnable temporal function combines **Fourier** and **Spline bases** to effectively model both periodic and non-periodic temporal patterns. The dual-channel encoding consists of a **Time Encoding Channel** that captures global temporal evolution and a **Neighbor Interaction Channel** that models temporally-modulated local interaction dynamics. Finally, a **dual-stream Transformer architecture** integrates node, edge, and temporal representations. 
-
-Extensive experiments on six real-world datasets demonstrate that LTFDyG achieves strong performance across diverse dynamic graph learning tasks.
+To overcome this limitation, we propose LTFDyG, a dynamic graph neural network that leverages a learnable temporal function and a dual-channel encoding architecture. The learnable temporal function combines Fourier and Spline bases to effectively model both periodic and non-periodic temporal patterns. The dual-channel encoding consists of a Time Encoding Channel that captures global temporal evolution and a Neighbor Interaction Channel that models temporally-modulated local interaction dynamics. Finally, a dual-stream Transformer architecture integrates node, edge, and temporal representations. Extensive experiments on six real-world datasets demonstrate that LTFDyG achieves strong performance across diverse dynamic graph learning tasks.
 <img width="3175" height="1421" alt="LTFDyG " src="https://github.com/user-attachments/assets/b161a111-3ef7-4757-bb48-33a373366188" />
 
 # LTFDyG Hyperparameters
@@ -21,9 +17,9 @@ Extensive experiments on six real-world datasets demonstrate that LTFDyG achieve
 |---------|----------------|-------|
 | **Input Features** | Node feature dimension | 172 |
 | | Edge feature dimension | 172 |
-| **Temporal Function** | Fourier basis number (M) | 5 |
-| | Spline basis number (N) | 8 |
-| **Model Architecture** | Temporal embedding dimension (dt) | 100 |
+| **Temporal Function** | Fourier basis number | 5 |
+| | Spline basis number | 8 |
+| **Model Architecture** | Temporal embedding dimension | 100 |
 | | Neighbor interaction dimension | 50 |
 | | Projection dimension | 50 |
 | | Transformer layers | 2 |
