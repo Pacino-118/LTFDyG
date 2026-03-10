@@ -7,6 +7,7 @@
 Dynamic graph neural networks (DGNNs) have become essential for modeling evolving relational systems such as financial transaction networks and communication networks. Despite their success, most existing approaches rely on fixed-form time encoding functions, which limits their ability to capture complex temporal patterns. 
 
 To overcome this limitation, we propose LTFDyG, a dynamic graph neural network that leverages a learnable temporal function and a dual-channel encoding architecture. The learnable temporal function combines Fourier and Spline bases to effectively model both periodic and non-periodic temporal patterns. The dual-channel encoding consists of a Time Encoding Channel that captures global temporal evolution and a Neighbor Interaction Channel that models temporally-modulated local interaction dynamics. Finally, a dual-stream Transformer architecture integrates node, edge, and temporal representations. Extensive experiments on six real-world datasets demonstrate that LTFDyG achieves strong performance across diverse dynamic graph learning tasks.
+
 <img width="3175" height="1421" alt="LTFDyG " src="https://github.com/user-attachments/assets/b161a111-3ef7-4757-bb48-33a373366188" />
 
 # LTFDyG Hyperparameters
