@@ -1,4 +1,4 @@
-**LTFDyG: A Learnable Temporal Function-based Dynamic Graph Neural Network with Dual-Channel Encoding**
+**LTFDyG: A Learnable Temporal Function-based Dynamic Graph Neural Network with Dual-Channel EncodingLTFDyG：一种双通道编码的可学习时态函数动态图神经网络**
 ---
 
 
@@ -6,7 +6,7 @@
 
 Dynamic graph neural networks (DGNNs) have become essential for modeling evolving relational systems such as financial transaction networks and communication networks. Despite their success, most existing approaches rely on fixed-form time encoding functions, which limits their ability to capture complex temporal patterns. 
 
-To overcome this limitation, we propose LTFDyG, a dynamic graph neural network that leverages a learnable temporal function and a dual-channel encoding architecture. The learnable temporal function combines Fourier and Spline bases to effectively model both periodic and non-periodic temporal patterns. The dual-channel encoding consists of a Time Encoding Channel that captures global temporal evolution and a Neighbor Interaction Channel that models temporally-modulated local interaction dynamics. Finally, a dual-stream Transformer architecture integrates node, edge, and temporal representations. Extensive experiments on six real-world datasets demonstrate that LTFDyG achieves strong performance across diverse dynamic graph learning tasks.
+To overcome this limitation, we propose LTFDyG, a dynamic graph neural network that leverages a learnable temporal function and a dual-channel encoding architecture. The learnable temporal function combines Fourier and Spline bases to effectively model both periodic and non-periodic temporal patterns. The dual-channel encoding consists of a Time Encoding Channel that captures global temporal evolution and a Neighbor Interaction Channel that models temporally-modulated local interaction dynamics. Finally, a dual-stream Transformer architecture integrates node, edge, and temporal representations. Extensive experiments on six real-world datasets demonstrate that LTFDyG achieves strong performance across diverse dynamic graph learning tasks.为了克服这一限制，我们提出了LTFDyG，这是一种利用可学习时间函数和双通道编码架构的动态图神经网络。可学习的时间函数结合了傅里叶和样条基来有效地模拟周期和非周期时间模式。双通道编码由捕获全局时间演化的时间编码通道和模拟时间调制的局部交互动态的邻居交互通道组成。最后，双流Transformer架构集成了节点、边缘和时态表示。在六个真实数据集上的大量实验表明，LTFDyG在不同的动态图学习任务中取得了较好的性能。
 
 <img width="3175" height="1421" alt="LTFDyG " src="https://github.com/user-attachments/assets/b161a111-3ef7-4757-bb48-33a373366188" />
 
@@ -19,7 +19,7 @@ To overcome this limitation, we propose LTFDyG, a dynamic graph neural network t
 | **Input Features** | Node feature dimension | 172 |
 | | Edge feature dimension | 172 |
 | **Temporal Function** | Fourier basis number | 5 |
-| | Spline basis number | 8 |
+| | Spline basis number | 5 |
 | **Model Architecture** | Temporal embedding dimension | 100 |
 | | Neighbor interaction dimension | 50 |
 | | Projection dimension | 50 |
@@ -38,8 +38,8 @@ To overcome this limitation, we propose LTFDyG, a dynamic graph neural network t
 | Dataset | Batch Size | Learning Rate | Dropout | Neighbor Samples | Fusion Ratio p |
 |---------|------------|---------------|---------|-----------------|----------------|
 | Wikipedia | 200 | 1e-4 | 0.1 | 32 | 0.2611 |
-| Reddit | 200 | 1e-4 | 0.2 | 64 | 0.1159 |
+| Reddit | 200 | 1e-4 | 0.2 | 32 | 0.1159 |
 | UCI | 200 | 1e-4 | 0.1 | 32 | 0.2019 |
-| Enron | 200 | 1e-4 | 0.0 | 256 | 0.0686 |
-| MOOC | 200 | 1e-4 | 0.1 | 256 | 0.0982 |
-| Can. Parl. | 200 | 1e-4 | 0.1 | 2048 | 0.0817 |
+| Enron | 200 | 1e-4 | 0.0 | 32 | 0.0686 |
+| MOOC | 200 | 1e-4 | 0.1 | 32 | 0.0982 |
+| Can. Parl. | 200 | 1e-4 | 0.1 | 32 | 0.0817 |
