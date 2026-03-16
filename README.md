@@ -1,4 +1,4 @@
-**LTFDyG: A Learnable Temporal Function-based Dynamic Graph Neural Network with Dual-Channel EncodingLTFDyG：一种双通道编码的可学习时态函数动态图神经网络**
+**LTFDyG: A Learnable Temporal Function-based Dynamic Graph Neural Network with Dual-Channel Encoding**
 ---
 
 
