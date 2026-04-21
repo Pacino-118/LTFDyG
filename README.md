@@ -43,3 +43,11 @@ To overcome this limitation, we propose LTFDyG, a dynamic graph neural network t
 | Enron | 200 | 1e-4 | 0.0 | 32 | 0.0686 |
 | MOOC | 200 | 1e-4 | 0.1 | 32 | 0.0982 |
 | Can. Parl. | 200 | 1e-4 | 0.1 | 32 | 0.0817 |
+
+
+# Datasets
+
+We use six widely adopted dynamic graph datasets: Wikipedia, Reddit, UCI, Enron, MOOC, and Canadian Parliament (Can. Parl.). All processed datasets are available for download at the following link: [https://1drv.ms/f/c/9e05fb6300cb1c12/IgDPdVadB48lSoJgz-zmWsSfAVxRJKxH21IOWA0Rf43A4LI?e=flhrBq](https://1drv.ms/f/c/9e05fb6300cb1c12/IgDPdVadB48lSoJgz-zmWsSfAVxRJKxH21IOWA0Rf43A4LI?e=flhrBq).
+
+We adopt a temporal split strategy for all datasets, where 70% of the data is used for training, 15% for validation, and 15% for testing. The split is performed chronologically, with earlier interactions assigned to the training set, middle interactions to the validation set, and the latest interactions to the test set.
+
