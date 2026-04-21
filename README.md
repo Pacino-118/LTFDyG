@@ -45,8 +45,19 @@ To overcome this limitation, we propose LTFDyG, a dynamic graph neural network t
 | Can. Parl. | 200 | 1e-4 | 0.1 | 32 | 0.0817 |
 
 
-# Datasets
+# Benchmark Datasets and Preprocessing
 
-We use six widely adopted dynamic graph datasets: Wikipedia, Reddit, UCI, Enron, MOOC, and Canadian Parliament (Can. Parl.). All processed datasets are available for download via a OneDrive link: [https://1drv.ms/f/c/9e05fb6300cb1c12/IgDPdVadB48lSoJgz-zmWsSfAVxRJKxH21IOWA0Rf43A4LI?e=flhrBq](https://1drv.ms/f/c/9e05fb6300cb1c12/IgDPdVadB48lSoJgz-zmWsSfAVxRJKxH21IOWA0Rf43A4LI?e=flhrBq).
+We adopt six widely used dynamic graph datasets: Wikipedia, Reddit, UCI, Enron, MOOC, and Canadian Parliament (Can. Parl.).
 
-All datasets are split chronologically into 70% training, 15% validation, and 15% test sets, ensuring that models are evaluated on future interactions.
+All processed datasets are available via a public OneDrive repository:  
+https://1drv.ms/f/c/9e05fb6300cb1c12/IgDPdVadB48lSoJgz-zmWsSfAVxRJKxH21IOWA0Rf43A4LI?e=flhrBq
+
+Please download the datasets and place them under the `preprocess_data` folder.
+
+All datasets are split chronologically into 70% training, 15% validation, and 15% test sets to ensure evaluation on future interactions.
+
+If you want to preprocess raw data, you can run:
+
+```bash
+cd preprocess_data/
+python preprocess_data.py --dataset_name wikipedia
