@@ -44,20 +44,3 @@ To overcome this limitation, we propose LTFDyG, a dynamic graph neural network t
 | MOOC | 200 | 1e-4 | 0.1 | 32 | 0.0982 |
 | Can. Parl. | 200 | 1e-4 | 0.1 | 32 | 0.0817 |
 
-
-# Benchmark Datasets and Preprocessing
-
-We adopt six widely used dynamic graph datasets: Wikipedia, Reddit, UCI, Enron, MOOC, and Canadian Parliament (Can. Parl.).
-
-All processed datasets are available via a public OneDrive repository:  
-https://1drv.ms/f/c/9e05fb6300cb1c12/IgDPdVadB48lSoJgz-zmWsSfAVxRJKxH21IOWA0Rf43A4LI?e=dKa5LC.
-
-Please download the datasets and place them under the `preprocess_data` folder.
-
-All datasets are split chronologically into 70% training, 15% validation, and 15% test sets to ensure evaluation on future interactions.
-
-If you want to preprocess raw data, you can run:
-
-```bash
-cd preprocess_data/
-python preprocess_data.py --dataset_name wikipedia
