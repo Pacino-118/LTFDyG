@@ -50,7 +50,7 @@ To overcome this limitation, we propose LTFDyG, a dynamic graph neural network t
 We adopt six widely used dynamic graph datasets: Wikipedia, Reddit, UCI, Enron, MOOC, and Canadian Parliament (Can. Parl.).
 
 All processed datasets are available via a public OneDrive repository:  
-https://1drv.ms/f/c/9e05fb6300cb1c12/IgDPdVadB48lSoJgz-zmWsSfAVxRJKxH21IOWA0Rf43A4LI?e=flhrBq
+[https://1drv.ms/f/c/9e05fb6300cb1c12/IgDPdVadB48lSoJgz-zmWsSfAVxRJKxH21IOWA0Rf43A4LI?e=flhrBq](https://1drv.ms/f/c/9e05fb6300cb1c12/IgDPdVadB48lSoJgz-zmWsSfAVxRJKxH21IOWA0Rf43A4LI?e=dKa5LC)
 
 Please download the datasets and place them under the `preprocess_data` folder.
 
