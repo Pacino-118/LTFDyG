@@ -49,12 +49,12 @@ To overcome this limitation, we propose LTFDyG, a dynamic graph neural network t
 
 We use six widely-used dynamic graph datasets:
 
-1. **Wikipedia** – [Download](http://snap.stanford.edu/jodie/wikipedia.csv)
-2. **Reddit** – [Download](http://snap.stanford.edu/jodie/reddit.csv)
-3. **UCI** – [Download](http://konect.cc/networks/opsahl-ucsocial/)
-4. **Enron** – [Download](https://www.cs.cmu.edu/~./enron/)
-5. **MOOC** – [Download](http://snap.stanford.edu/jodie/mooc.csv)
-6. **Can. Parl.** – [Download](https://zenodo.org/records/7213796#.Y1cO6y8r30o)
+1. **Wikipedia** – http://snap.stanford.edu/jodie/wikipedia.csv
+2. **Reddit** – http://snap.stanford.edu/jodie/reddit.csv
+3. **UCI** – http://konect.cc/networks/opsahl-ucsocial/
+4. **Enron** – https://www.cs.cmu.edu/~./enron/
+5. **MOOC** – http://snap.stanford.edu/jodie/mooc.csv
+6. **Can. Parl.** – https://zenodo.org/records/7213796#.Y1cO6y8r30o
 
 
 
