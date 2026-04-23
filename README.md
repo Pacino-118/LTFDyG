@@ -44,3 +44,18 @@ To overcome this limitation, we propose LTFDyG, a dynamic graph neural network t
 | MOOC | 200 | 1e-4 | 0.1 | 32 | 0.0982 |
 | Can. Parl. | 200 | 1e-4 | 0.1 | 32 | 0.0817 |
 
+
+# Data Availablity
+
+We use six widely-used dynamic graph datasets:
+
+1. **Wikipedia** – [Download](http://snap.stanford.edu/jodie/wikipedia.csv)
+2. **Reddit** – [Download](http://snap.stanford.edu/jodie/reddit.csv)
+3. **UCI** – [Download](http://konect.cc/networks/opsahl-ucsocial/)
+4. **Enron** – [Download](https://www.cs.cmu.edu/~./enron/)
+5. **MOOC** – [Download](http://snap.stanford.edu/jodie/mooc.csv)
+6. **Can. Parl.** – [Download](https://zenodo.org/records/7213796#.Y1cO6y8r30o)
+
+
+
+
